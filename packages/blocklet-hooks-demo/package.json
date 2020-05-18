@@ -1,7 +1,8 @@
 {
   "name": "blocklet-hooks-demo",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "directory": "_blocklet/"
   },
   "version": "0.1.13",
   "description": "Demo blocklet that showing how blocklet hooks is used",
