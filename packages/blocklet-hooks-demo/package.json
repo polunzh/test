@@ -4,7 +4,7 @@
     "access": "public",
     "directory": "_blocklet/"
   },
-  "version": "0.1.13",
+  "version": "0.1.14",
   "description": "Demo blocklet that showing how blocklet hooks is used",
   "files": [
     "app/",
