@@ -4,7 +4,7 @@
     "access": "public",
     "directory": "_blocklet/"
   },
-  "version": "0.1.14",
+  "version": "0.1.5",
   "description": "This is for test",
   "files": [
     "app/",
