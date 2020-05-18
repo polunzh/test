@@ -41,8 +41,6 @@
     "lint": "eslint app",
     "lint:fix": "eslint --fix app",
     "precommit": "CI=1 npm run lint",
-    "prepublishOnly": "echo zhanghzenqiang && cd _blocklet/",
-    "postpublish": "cd ..",
     "prepush": "CI=1 npm run lint"
   },
   "keywords": [
