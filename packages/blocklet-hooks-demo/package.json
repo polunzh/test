@@ -55,5 +55,5 @@
     "@abtnode/passport": "^0.5.0",
     "express": "^4.17.1"
   },
-  "gitHead": "bfb84f286867051ae8f77504d0aab9e0ceb36536"
+  "gitHead": "8dda32dbb91f40b6cd1655849cec6009dd7a4e7f"
 }
