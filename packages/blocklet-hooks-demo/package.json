@@ -41,8 +41,7 @@
     "lint": "eslint app",
     "lint:fix": "eslint --fix app",
     "precommit": "CI=1 npm run lint",
-    "prepublishOnly": "npm run build",
-    "build": "DEBUG=@abtnode/* NODE_ENV=production node ../../core/cli/bin/abtnode.js bundle -w app/webpack.blocklet.js",
+    "prepublishOnly": "cd _blocklet/",
     "prepush": "CI=1 npm run lint"
   },
   "keywords": [
@@ -55,5 +54,5 @@
     "@abtnode/passport": "^0.5.0",
     "express": "^4.17.1"
   },
-  "gitHead": "e5764f753181ed6a7c615cd4fc6682aacf0cb7cd"
+  "gitHead": "bfb84f286867051ae8f77504d0aab9e0ceb36536"
 }
