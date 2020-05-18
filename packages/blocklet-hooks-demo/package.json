@@ -5,7 +5,7 @@
     "directory": "_blocklet/"
   },
   "version": "0.1.14",
-  "description": "Demo blocklet that showing how blocklet hooks is used",
+  "description": "This is for test",
   "files": [
     "app/",
     "blocklet.js",
