@@ -1,0 +1,59 @@
+{
+  "name": "blocklet-hooks-demo",
+  "publishConfig": {
+    "access": "public"
+  },
+  "version": "0.1.2",
+  "description": "Demo blocklet that showing how blocklet hooks is used",
+  "files": [
+    "app/",
+    "blocklet.js",
+    "blocklet.md",
+    "blocklet.json",
+    "logo.png"
+  ],
+  "blocklet": {
+    "group": "dapp",
+    "color": "primary",
+    "main": "app/index.js",
+    "logo": "logo.png",
+    "provider": "arcblock",
+    "admin_url": "/admin",
+    "config_url": "/config",
+    "public_url": "/",
+    "hooks": {
+      "pre-deploy": "npm run build",
+      "post-install": "node app/hooks/post-install.js",
+      "pre-stop": "node app/hooks/pre-stop.js",
+      "pre-install": "node app/hooks/pre-install.js",
+      "pre-start": "node app/hooks/pre-start.js",
+      "pre-uninstall": "node app/hooks/pre-uninstall.js"
+    },
+    "hookFiles": [
+      "app/hooks/post-install.js",
+      "app/hooks/pre-stop.js",
+      "app/hooks/pre-install.js",
+      "app/hooks/pre-start.js",
+      "app/hooks/pre-uninstall.js"
+    ]
+  },
+  "scripts": {
+    "lint": "eslint app",
+    "lint:fix": "eslint --fix app",
+    "precommit": "CI=1 npm run lint",
+    "prepublishOnly": "npm run build",
+    "build": "DEBUG=@abtnode/* NODE_ENV=production node ../../core/cli/bin/abtnode.js bundle -w app/webpack.blocklet.js",
+    "prepush": "CI=1 npm run lint"
+  },
+  "keywords": [
+    "dapp",
+    "demo"
+  ],
+  "author": "polunzh <polunzh@gmail.com> (http://github.com/polunzh)",
+  "license": "MIT",
+  "dependencies": {
+    "@abtnode/passport": "^0.5.0",
+    "express": "^4.17.1"
+  },
+  "gitHead": "e5764f753181ed6a7c615cd4fc6682aacf0cb7cd"
+}
