@@ -3,7 +3,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "Demo blocklet that showing how blocklet hooks is used",
   "files": [
     "app/",
